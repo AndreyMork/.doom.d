@@ -60,3 +60,6 @@
 
 ;; Bind Command+left click to middle click
 (define-key key-translation-map (kbd "<s-mouse-1>") (kbd "<mouse-2>"))
+
+;; Bind C-h C-h to switch to normal mode from insert mode
+(map! :i "C-h C-h" 'evil-normal-state)
